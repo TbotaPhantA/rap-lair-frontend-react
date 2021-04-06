@@ -1,0 +1,54 @@
+.welcome_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.4) url(https://i.pinimg.com/originals/2d/21/3d/2d213d36f66c318754bd4b78ab9361f1.jpg);
+    background-blend-mode: darken;
+}
+
+.welcome_block_title {
+    font-size: 52px;
+    color: #FFBA00;
+}
+
+.welcome_block_text {
+    color: #E9E9E9;
+    max-width: 800px;
+}
+
+.welcome_block_sign_up_btn {
+    color: black;
+    padding: 15px;
+    background-color: #FFBA00;
+    border-radius: 999px;
+    width: 400px;
+    margin: 20px;
+    transition: 0.1s;
+}
+
+.welcome_block_sign_up_btn:hover {
+    transform: scale(0.99); 
+    box-shadow: 0 0 50px rgba(255, 224, 81, 0.3);
+    cursor: pointer;
+}
+
+.welcome_block_sign_in_btn {
+    padding: 15px;
+    background-color: #2500E2;
+    border: 2px solid #411CFF;
+    border-radius: 999px;
+    width: 400px;
+    margin: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.welcome_block_sign_in_btn:hover {
+    transform: scale(0.99); 
+    box-shadow: 0 0 50px rgba(65, 28, 255, 0.5);
+    cursor: pointer;
+}
