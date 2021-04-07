@@ -1,0 +1,48 @@
+.teachers_block {
+    height: 10vh;
+    display: flex;
+}
+
+.teachers_block_title {
+    flex: 0.3;
+    background-color: #131313;
+}
+
+.teachers_block_title > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    background-color: #FFC31E;
+    color: white;
+    animation: 0.8s ease-in-out fill_effect;
+}
+
+@keyframes fill_effect {
+    0% {
+        width: 0;
+        color: #FFC31E;
+    }
+    50%{
+        color: #FFC31E;
+    }
+    100% {
+        width: 100%;
+        color: white;
+    }
+}
+
+
+
+.teachers_block_title > div > span {
+    padding: 20px;
+    font-size: 32px;
+}
+
+.teachers_block_carousel {
+    flex: 0.7;
+    height: 100%;
+    width: 100%;
+    background-color: #131313;
+}
