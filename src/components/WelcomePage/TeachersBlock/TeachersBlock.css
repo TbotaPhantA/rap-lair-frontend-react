@@ -1,6 +1,8 @@
 .teachers_block {
-    height: 10vh;
+    height: 8vh;
     display: flex;
+    border-top: 1px solid #FFC31E;
+    border-bottom: 1px solid #FFC31E;
 }
 
 .teachers_block_title {
@@ -13,10 +15,10 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    width: 100%;
+    width: 0;
     background-color: #FFC31E;
     color: white;
-    animation: 1.2s cubic-bezier(.86,0,.01,1) fill_effect;
+    animation: 1.2s cubic-bezier(0.11, 0.33, 0.01, 1) 1.8s fill_effect forwards;
 }
 
 @keyframes fill_effect {
