@@ -59,7 +59,6 @@
 }
 
 
-
 @keyframes carousel {
     0% {
         transform: translate(100%);
@@ -76,6 +75,12 @@
     width: 35vw;
     height: 100%;
     color: white;
+    border-right: 1px solid black;
+}
+
+.carousel_element:hover {
+    background-color: #ffffff10;
+    cursor: pointer;
 }
 
 .name_of_teacher {

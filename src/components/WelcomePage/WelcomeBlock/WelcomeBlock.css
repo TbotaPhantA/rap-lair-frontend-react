@@ -33,14 +33,18 @@
 }
 
 
+
 .welcome_block_title {
     margin-top: 25vh;
+    margin-bottom: 30px;
     max-width: 35vw;
     font-size: 64px;
     color: white;
     opacity: 0;
+    text-shadow: 2px 2px 4px black;
     animation: 1s ease-out var(--welcome-motion-duration) 1 slideInFromTop forwards,
                0.1s ease-in 8s 1 blink_animation;
+
 }
 
 .welcome_block_title > span {
@@ -51,6 +55,8 @@
     color: #E9E9E9;
     max-width: 800px;
     opacity: 0;
+    text-shadow: 2px 2px 10px black,
+    2px 2px 5px black;
     animation: 0.8s ease-out var(--welcome-motion-duration) 1 slideInFromTop forwards,
                0.1s ease-in 8s 1 blink_animation;
 }
@@ -71,14 +77,12 @@
 .welcome_block_sign_up_btn:hover {
     background-color: #FFC31E;
     transform: scale(0.99); 
-    box-shadow: 0 0 50px rgba(255, 224, 81, 0.3);
     cursor: pointer;
 }
 
 .welcome_block_sign_up_btn:active {
     background-color: #FFC31E;
     transform: scale(0.96); 
-    box-shadow: 0 0 70px rgba(255, 224, 81, 0.3);
     cursor: pointer;
 }
 
@@ -95,16 +99,14 @@
 }
 
 .welcome_block_sign_in_btn:hover {
-    background-color: #2A00FF;
+    background-color: #2471C3;
     transform: scale(0.99); 
-    box-shadow: 0 0 50px rgba(65, 28, 255, 0.7);
     cursor: pointer;
 }
 
 .welcome_block_sign_in_btn:active {
-    background-color: #2A00FF;
+    background-color: #2471C3;
     transform: scale(0.96); 
-    box-shadow: 0 0 70px rgba(65, 28, 255, 0.9);
     cursor: pointer;
 }
 
@@ -119,7 +121,6 @@
     100% {
         transform: translateY(0);
         opacity: 1;
-        padding: 15px;
         transition: all 0.1s ease-in-out;
     }
 }
@@ -156,11 +157,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: german_walk ease-in-out 4s forwards 2 alternate;
+    transition: 0.2s;
+    filter: drop-shadow(0 0 100px #FFC31E);
+    animation: german_walk ease-in-out 6s forwards 2 alternate;
 }
 
 .welcome_block_german:hover {
+    filter: drop-shadow(0 0 40px #FFC31E);
     background-image: url(../../../images/CoolGermanHover.png);
+}
+
+.welcome_block_german:active{
+    animation-play-state: paused;
 }
 
 @keyframes german_walk {
