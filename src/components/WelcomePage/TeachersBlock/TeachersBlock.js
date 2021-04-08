@@ -10,7 +10,20 @@ function TeachersBlock() {
                 </div>
             </div>
             <div className="teachers_block_carousel">
-                funny carousel
+                <div className="carousel_track">
+                        <div className="carousel_element">
+                            <span className="name_of_teacher">LIL TOKMISTIK228</span>
+                            <span className="description_of_teacher">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                        </div>
+                        <div className="carousel_element">
+                            <span className="name_of_teacher">GERMAN</span>
+                            <span className="description_of_teacher">Lorem ipsum dolor sit amet consectetur.</span>
+                        </div>
+                        <div className="carousel_element">
+                            <span className="name_of_teacher">mc.bread</span>
+                            <span className="description_of_teacher">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                        </div>
+                </div>
             </div>
         </div>
     );
