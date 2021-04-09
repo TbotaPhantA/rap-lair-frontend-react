@@ -18,7 +18,7 @@ const customStylesOfModals = {
         bottom: 'auto',
         marginRight: 'auto',
         transform: 'translate(-50%, -50%)',
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         border: 'none',
         color: 'black',
         padding: '0',

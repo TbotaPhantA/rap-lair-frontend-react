@@ -55,6 +55,7 @@
     width: fit-content;
     display: flex;
     animation: 14s linear infinite carousel;
+    animation-delay: 3s;
     box-sizing: content-box;
 }
 

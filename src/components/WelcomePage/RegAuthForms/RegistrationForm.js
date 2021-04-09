@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
 import IconButton from '@material-ui/core/IconButton';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import CloseIcon from '@material-ui/icons/Close';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +30,11 @@ function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
                 <img src={RegistrationFormImage} alt=""/>
             </div>
             <div className="RF_form_wrapper">
+                <div className="registration_form_header">
+                    <CloseIcon className="close_register_icon"
+                    onClick={closeRegisterFunc}
+                    fontSize="large" />
+                </div>
                 <form className='registration_form' noValidate autoComplete="off" action="">
                     <h1>Registration Info</h1>
                     <TextField className="registration_input" id="stardard-basic" label="Name" />
@@ -46,7 +52,7 @@ function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
                     <Button variant="contained" color="primary">Registrate</Button>
                     <div className="already_have_an_account">
                         Already have an account? 
-                        <Button onClick={changeFromRegToAuth} href="/" color="primary">
+                        <Button onClick={changeFromRegToAuth} color="primary">
                             Sign IN
                         </Button>
                     </div>

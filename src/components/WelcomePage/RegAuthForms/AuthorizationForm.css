@@ -6,6 +6,7 @@
 
 .AF_image_wrapper {
     flex: 0.5;
+    background-color: black;
 }
 
 .AF_image_wrapper > img {
@@ -23,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
 }
 
 .authorization_input {
@@ -31,4 +33,23 @@
 
 .already_have_an_account {
     font-size: medium;
+}
+
+.authorization_form_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    padding-right: 15px;
+    color: black;
+}
+
+.close_authorization_icon {
+    transition: 0.2s;
+}
+
+.close_authorization_icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px black);
 }

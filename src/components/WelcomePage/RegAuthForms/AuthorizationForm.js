@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
+import CloseIcon from '@material-ui/icons/Close';
 
 function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
 
@@ -18,6 +19,11 @@ function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
                 <img src={RegistrationFormImage} alt=""/>
             </div>
             <div className="AF_form_wrapper">
+                <div className="authorization_form_header">
+                    <CloseIcon className="close_authorization_icon" 
+                    onClick={closeAuthorizationFunc}
+                    fontSize="large"/>
+                </div>
                 <form className='authorization_form' noValidate autoComplete="off" action="">
                     <h1>Authorization Info</h1>
                     <TextField className="authorization_input" id="stardard-basic" label="email" type="email" />
@@ -25,7 +31,7 @@ function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
                     <Button variant="contained" color="primary">Enter</Button>
                     <div className="already_have_an_account">
                         Don't have an account? 
-                        <Button onClick={changeFromAuthToReg} href="/" color="primary">
+                        <Button onClick={changeFromAuthToReg} color="primary">
                             Sign UP 
                         </Button>
                     </div>
