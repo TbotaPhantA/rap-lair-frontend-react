@@ -1,0 +1,54 @@
+ .rapper_card {
+     background-color: white;
+     height: 45vh;
+     width: 400px;
+     margin: 30px;
+     box-shadow: 0 -1px 2px #00000010,
+     0 -2px 4px #00000020;
+ }
+
+ .rapper_card_name {
+     background-color: #FF0084;
+     position: absolute;
+     padding: 5px 10px;
+     margin: 15px;
+     color: white;
+     font-weight: 500;
+ }
+
+.rapper_card_image_wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 40%;
+}
+
+.rapper_card_image {
+    width: 100%;
+}
+
+.rapper_card_qualities {
+    margin: 15px;
+    font-weight: 500;
+}
+
+.rapper_card_achievements {
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.rapper_card_one_phrase_description {
+    color: #00EDAD;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.rapper_card_description_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 60%;
+}
