@@ -61,10 +61,10 @@
 
 @keyframes carousel {
     0% {
-        transform: translate(100%);
+        transform: translate(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
