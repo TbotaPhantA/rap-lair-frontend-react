@@ -1,0 +1,34 @@
+.authorization_form_div {
+    display: flex;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.AF_image_wrapper {
+    flex: 0.5;
+}
+
+.AF_image_wrapper > img {
+    width: 100%;
+}
+
+.AF_form_wrapper {
+    flex: 0.5;
+}
+
+.authorization_form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.authorization_input {
+    width: 80%;
+}
+
+.already_have_an_account {
+    font-size: medium;
+}
