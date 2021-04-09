@@ -2,9 +2,9 @@ import React from 'react';
 import './RapperCard.css';
 import rapperImage from '../../../../images/german.png';
 
-function RapperCard() {
+function RapperCard({data_aos, data_aos_duration}) {
     return (
-        <div className="rapper_card">
+        <div className="rapper_card" data-aos={data_aos} data-aos-duration={data_aos_duration}>
             <div className="rapper_card_name unselectable_text">Some Name</div>
             <div className="rapper_card_image_wrapper">
                 <img className="rapper_card_image" src={rapperImage} alt="Rapper"/>
