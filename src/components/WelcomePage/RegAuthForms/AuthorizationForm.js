@@ -25,7 +25,7 @@ function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
                     <Button variant="contained" color="primary">Enter</Button>
                     <div className="already_have_an_account">
                         Don't have an account? 
-                        <Button onClick={changeFromAuthToReg} href="#text-buttons" color="primary">
+                        <Button onClick={changeFromAuthToReg} href="/" color="primary">
                             Sign UP 
                         </Button>
                     </div>

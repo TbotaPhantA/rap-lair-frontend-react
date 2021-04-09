@@ -7,7 +7,7 @@ import BestRappersBlock from './BestRappersBlock/BestRappersBlock';
 import RegistrationForm from './RegAuthForms/RegistrationForm';
 import AuthorizationForm from './RegAuthForms/AuthorizationForm';
 
-const customStyles = {
+const customStylesOfModals = {
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
     },
@@ -52,21 +52,25 @@ function WelcomePage() {
 
     return (
         <div className="welcome_page">
+
             <WelcomeBlock openRegisterFunc={openRegister} openAuthorizationFunc={openAuthorization} />
             <TeachersBlock />
             <BestRappersBlock />
+
             <Modal
             isOpen={isRegisterOpen}
             onRequestClose={closeRegister}
-            style={customStyles}>
+            style={customStylesOfModals}>
                 <RegistrationForm openAuthorizationFunc={openAuthorization} closeRegisterFunc={closeRegister} />
             </Modal>
+
             <Modal
             isOpen={isAuthorizationOpen}
             onRequestClose={closeAuthorization}
-            style={customStyles}>
+            style={customStylesOfModals}>
                 <AuthorizationForm openRegisterFunc={openRegister} closeAuthorizationFunc={closeAuthorization} />
             </Modal>
+
         </div>
     );
 }
