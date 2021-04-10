@@ -1,0 +1,38 @@
+.third_party_authorization {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tpa_icon {
+    width: 32px;
+    color: gray;
+}
+
+.tpa_icon:hover {
+    cursor: pointer;
+}
+
+.tpa_facebook:hover {
+    color: rgb(17, 82, 147); 
+}
+
+.tpa_github:hover {
+    color: black;
+}
+
+.tpa_google{
+    font-size: 40px;
+    height: 40px;
+    font-family: 'Verdana';
+    font-weight: 500;
+}
+
+.tpa_google:hover {
+    background-image: url(../../../../images/google-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    font-size: 0;
+}

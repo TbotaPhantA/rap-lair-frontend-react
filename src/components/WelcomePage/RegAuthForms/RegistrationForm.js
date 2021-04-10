@@ -7,6 +7,7 @@ import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
 import IconButton from '@material-ui/core/IconButton';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import CloseIcon from '@material-ui/icons/Close';
+import ThirdPartyAuthorization from './ThridPartyAuthorization/ThirdPartyAuthorization';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +37,7 @@ function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
                     fontSize="large" />
                 </div>
                 <form className='registration_form' noValidate autoComplete="off" action="">
+                    <ThirdPartyAuthorization />
                     <h1>Registration Info</h1>
                     <TextField className="registration_input" id="stardard-basic" label="Name" />
                     <TextField className="registration_input" id="stardard-basic" label="email" type="email" />

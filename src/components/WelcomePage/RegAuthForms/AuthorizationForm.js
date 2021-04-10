@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
 import CloseIcon from '@material-ui/icons/Close';
+import ThirdPartyAuthorization from './ThridPartyAuthorization/ThirdPartyAuthorization';
+
 
 function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
 
@@ -25,6 +27,7 @@ function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
                     fontSize="large"/>
                 </div>
                 <form className='authorization_form' noValidate autoComplete="off" action="">
+                    <ThirdPartyAuthorization />
                     <h1>Authorization Info</h1>
                     <TextField className="authorization_input" id="stardard-basic" label="email" type="email" />
                     <TextField className="authorization_input" id="stardard-basic" label="password" type="password" />
