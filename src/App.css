@@ -1,0 +1,4 @@
+.App {
+    /* Header is flying, so we need to give him space */
+    margin-top: 8vh;
+}

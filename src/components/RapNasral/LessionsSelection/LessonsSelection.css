@@ -1,0 +1,33 @@
+.lessons_selection {
+    background-color: #1a1a1a;
+    height: 92vh;
+    color: white;
+}
+
+.dancing_niggers {
+    position: fixed;
+    right: 0;
+    top: 5vh;
+    clip-path: circle(0 at 50% 50%);
+    background-color: black;
+    transition: 0.7s ;
+    animation: show_gif 14s linear;
+}
+
+@keyframes show_gif {
+    0%{
+        clip-path: circle(0 at 50% 50%);
+    }
+    15%{
+        clip-path: circle(70.7% at 50% 50%);
+    }
+    89% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+    95%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 0);
+    }
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0, 100% 0);
+    }
+}
