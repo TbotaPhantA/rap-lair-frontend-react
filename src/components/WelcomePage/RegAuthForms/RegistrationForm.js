@@ -99,7 +99,9 @@ function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
                     />
 
                     <UploadImg />
+
                     <Button type="submit" variant="contained" color="primary">Registrate</Button>
+
                     <div className="already_have_an_account">
                         Already have an account? 
                         <Button onClick={changeFromRegToAuth} color="primary">

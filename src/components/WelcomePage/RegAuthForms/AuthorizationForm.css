@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+.AF_form_wrapper {
+    flex: 0.5;
+}
+
 .authorization_form {
     display: flex;
     width: 100%;
