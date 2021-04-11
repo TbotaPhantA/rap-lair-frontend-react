@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^2.10.8",
+    "@hookform/resolvers": "^2.2.0",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/pickers": "^3.3.10",
     "@testing-library/jest-dom": "^5.11.10",
@@ -18,7 +19,8 @@
     "react-hook-form": "^7.0.5",
     "react-modal": "^3.12.1",
     "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "start": "react-scripts start",

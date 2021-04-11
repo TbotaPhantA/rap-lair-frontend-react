@@ -7,10 +7,37 @@ import FormInput from './FormInput/FormInput';
 import Button from '@material-ui/core/Button';
 import CloseIcon from '@material-ui/icons/Close';
 import {useForm} from 'react-hook-form';
+import {yupResolver} from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+    name: yup
+        .string()
+        .required("This is the requied field")
+        .min(2, "minimum length is 2")
+        .max(100, "maximum length is 100")
+        .matches(/^[a-zA-Z0-9_.]*$/, "please enter your name correctly"),
+
+    email: yup
+        .string()
+        .email("please enter your emali correctly")
+        .required("This is the requied field")
+        .max(100, "max length is 100"),
+
+    password: yup
+        .string()
+        .min(6, "minumum length is 6")
+        .matches(/^[a-zA-Z0-9_.]*$/, "Enter your password correctly"),
+    confirm_password: yup
+        .string()
+        .min(6, "minumum length is 6")
+        .oneOf([yup.ref('password'), null], 'Passwords must match'),
+})
 
 function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
-    const {register, handleSubmit, errors} = useForm({
-        mode: "onBlur"
+    const {register, handleSubmit, formState: {errors}} = useForm({
+        mode: "onBlur",
+        resolver: yupResolver(schema),
     });
  
     function changeFromRegToAuth() {
@@ -36,28 +63,43 @@ function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
                     <h1>Registration Info</h1>
                     
                     <FormInput 
-                    {...register("name", {required: true, minLength: 4, maxLength: 25})}
+                    {...register("name")}
+                    required
                     label="Name"
                     type="text" 
+                    error={!!errors?.name}
+                    helperText={errors?.name?.message}
                     />
 
                     <FormInput 
-                    {...register("email", {required: true})}
+                    {...register("email")}
+                    required
                     label="email" 
-                    type="text" />
+                    type="text" 
+                    error={!!errors?.email}
+                    helperText={errors?.email?.message}
+                    />
 
                     <FormInput 
-                    {...register("password", {required: true})}
+                    {...register("password")}
+                    required
                     label="password"
-                    type="password" />
+                    type="password" 
+                    error={!!errors?.password}
+                    helperText={errors?.password?.message}
+                    />
 
                     <FormInput 
-                    {...register("confirm_password", {required: true})}
+                    {...register("confirm_password")}
+                    required
                     label="confirm password" 
-                    type="password" />
+                    type="password" 
+                    error={!!errors?.confirm_password}
+                    helperText={errors?.confirm_password?.message}
+                    />
 
                     <UploadImg />
-                    <Button variant="contained" color="primary">Registrate</Button>
+                    <Button type="submit" variant="contained" color="primary">Registrate</Button>
                     <div className="already_have_an_account">
                         Already have an account? 
                         <Button onClick={changeFromRegToAuth} color="primary">
