@@ -4,15 +4,6 @@
     overflow: hidden;
 }
 
-.RF_image_wrapper {
-    flex: 0.5;
-    background-color: black;
-}
-
-.RF_image_wrapper > img {
-    width: 100%;
-}
-
 .RF_form_wrapper {
     flex: 0.5;
 }
@@ -25,10 +16,6 @@
     align-items: center;
     justify-content: space-around;
     background-color: white;
-}
-
-.registration_input {
-    width: 80%;
 }
 
 .already_have_an_account {

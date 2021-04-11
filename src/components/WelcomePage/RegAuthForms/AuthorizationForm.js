@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
 import CloseIcon from '@material-ui/icons/Close';
 import ThirdPartyAuthorization from './ThridPartyAuthorization/ThirdPartyAuthorization';
+import FormLeftImage from './FormLeftImage/FormLeftImage';
 
 
 function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
@@ -17,9 +18,7 @@ function AuthorizationForm({openRegisterFunc, closeAuthorizationFunc}) {
 
     return (
         <div className="authorization_form_div">
-            <div className="AF_image_wrapper">
-                <img src={RegistrationFormImage} alt=""/>
-            </div>
+            <FormLeftImage />
             <div className="AF_form_wrapper">
                 <div className="authorization_form_header">
                     <CloseIcon className="close_authorization_icon" 

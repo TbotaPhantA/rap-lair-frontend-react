@@ -1,56 +1,62 @@
 import React from 'react';
 import './RegistrationForm.css';
-import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import RegistrationFormImage from '../../../images/RegistrationFormImage.jpg';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import CloseIcon from '@material-ui/icons/Close';
 import ThirdPartyAuthorization from './ThridPartyAuthorization/ThirdPartyAuthorization';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-}));
+import FormLeftImage from './FormLeftImage/FormLeftImage';
+import UploadImg from './UploadImg/UploadImg';
+import FormInput from './FormInput/FormInput';
+import Button from '@material-ui/core/Button';
+import CloseIcon from '@material-ui/icons/Close';
+import {useForm} from 'react-hook-form';
 
 function RegistrationForm({openAuthorizationFunc, closeRegisterFunc}) {
-    const classes = useStyles();
-
+    const {register, handleSubmit, errors} = useForm({
+        mode: "onBlur"
+    });
+ 
     function changeFromRegToAuth() {
         closeRegisterFunc();
         openAuthorizationFunc();
     }
 
+    const onSubmit = (data) => {
+        console.log(data);
+    }
+
     return (
         <div className="registration_form_div">
-            <div className="RF_image_wrapper">
-                <img src={RegistrationFormImage} alt=""/>
-            </div>
+            <FormLeftImage />
             <div className="RF_form_wrapper">
                 <div className="registration_form_header">
                     <CloseIcon className="close_register_icon"
                     onClick={closeRegisterFunc}
                     fontSize="large" />
                 </div>
-                <form className='registration_form' noValidate autoComplete="off" action="">
+                <form className='registration_form' noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
                     <ThirdPartyAuthorization />
                     <h1>Registration Info</h1>
-                    <TextField className="registration_input" id="stardard-basic" label="Name" />
-                    <TextField className="registration_input" id="stardard-basic" label="email" type="email" />
-                    <TextField className="registration_input" id="stardard-basic" label="password" type="password" />
-                    <TextField className="registration_input" id="stardard-basic" label="confirm passoword" type="password" />
-                    <div className="registration_upload_image">
-                        <label htmlFor="icon-button-file">
-                            <IconButton color="primary" aria-label="upload picture" component="span">
-                            <PhotoCamera />
-                                Upload Image
-                            </IconButton>
-                        </label>
-                    </div>
+                    
+                    <FormInput 
+                    {...register("name", {required: true, minLength: 4, maxLength: 25})}
+                    label="Name"
+                    type="text" 
+                    />
+
+                    <FormInput 
+                    {...register("email", {required: true})}
+                    label="email" 
+                    type="text" />
+
+                    <FormInput 
+                    {...register("password", {required: true})}
+                    label="password"
+                    type="password" />
+
+                    <FormInput 
+                    {...register("confirm_password", {required: true})}
+                    label="confirm password" 
+                    type="password" />
+
+                    <UploadImg />
                     <Button variant="contained" color="primary">Registrate</Button>
                     <div className="already_have_an_account">
                         Already have an account? 
