@@ -2,6 +2,12 @@
     background-color: #1a1a1a;
     height: 92vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10vh;
+    color: #FFC31E;
+    font-size: 30px;
 }
 
 .dancing_niggers {
@@ -29,5 +35,114 @@
     }
     100%{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0, 100% 0);
+    }
+}
+
+.LS_buttons_wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    --button1_color: #FFC31E; /* #03e9f4 */
+    --button2_color: #2471C3;
+}
+
+.LS_button {
+    font-family: consolas;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 40px 0;
+    color: var(--button1_color);
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.LS_button:hover {
+    background:  var(--button1_color);
+    color: #050801;
+    box-shadow: 0 0 5px  var(--button1_color),
+                0 0 25px  var(--button1_color);
+}
+
+.LS_button span {
+    position: absolute;
+    display: block;
+}
+
+.LS_button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,  var(--button1_color));
+    animation: animate_top_spark 1s linear infinite;
+}
+@keyframes animate_top_spark {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.LS_button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,  var(--button1_color));
+    animation: animate_right_spark 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate_right_spark {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.LS_button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,  var(--button1_color));
+    animation: animate_bottom_spark 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate_bottom_spark {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.LS_button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,  var(--button1_color));
+    animation: animate_left_spark 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate_left_spark {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
     }
 }

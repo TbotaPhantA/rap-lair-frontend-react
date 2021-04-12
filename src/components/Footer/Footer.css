@@ -3,7 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #FFC31E;
     border-top: 1px solid #FFC31E;
     background-color: #1a1a1a;
+}
+
+.footer a {
+    color: #2471C3;
+    font-size: large;
 }
