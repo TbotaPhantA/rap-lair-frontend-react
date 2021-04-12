@@ -28,7 +28,7 @@ function SideBar() {
                         <Link to="/community_articles" className="CA_sidebar_option"><span></span><BookmarkIcon /> Bookmarks</Link>
                     </div>
                     <div className="CA_sidebar_footer">
-                        I'm the sidebar_footer
+                        <Link to="/community_articles" className='CA_sidebar_footer_link' > {/** thinkg to add donation link or something like that */} </Link>
                     </div>
                 </div>
             </div>
