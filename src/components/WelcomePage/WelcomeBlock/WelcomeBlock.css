@@ -36,9 +36,11 @@
 
 
 .welcome_block_title {
+    font-family: Permanent Marker;
+    letter-spacing: 3px;
     margin-top: 25vh;
     margin-bottom: 30px;
-    max-width: 35vw;
+    max-width: 40vw;
     font-size: 64px;
     color: white;
     opacity: 0;
@@ -63,12 +65,19 @@
 }
 
 .welcome_block_sign_up_btn {
-    color: black;
-    padding: 15px;
-    background-color:#ffb320;
+    color: #FFC31E;
+    font-family: Permanent Marker;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px black);
+    padding: 10px;
+    background-color:transparent;
+    border: 2px solid #FFC31E;
     border-radius: 999px;
     width: 400px;
-    margin: 20px;
+    margin: 40px 20px;
     transition: 0.1s;
     opacity: 0;
     animation: 0.6s ease-out var(--welcome-motion-duration) 1 slideInFromTop forwards,
@@ -77,6 +86,7 @@
 
 .welcome_block_sign_up_btn:hover {
     background-color: #FFC31E;
+    color: #1a1a1a;
     transform: scale(0.99); 
     cursor: pointer;
 }
@@ -88,8 +98,16 @@
 }
 
 .welcome_block_sign_in_btn {
-    padding: 15px;
-    background-color: #005cbf;
+    color: #2471c3;
+    font-family: Permanent Marker;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px black);
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #2471C3;
     border-radius: 999px;
     width: 400px;
     margin: 5px;
@@ -100,6 +118,7 @@
 }
 
 .welcome_block_sign_in_btn:hover {
+    color: white;
     background-color: #2471C3;
     transform: scale(0.99); 
     cursor: pointer;
