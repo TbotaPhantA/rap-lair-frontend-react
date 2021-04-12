@@ -7,7 +7,7 @@ function Footer() {
            <p class="copyright"> 
                 Copyright &copy;{new Date().getFullYear()} 
                 Все маи права защищены!!! | Не вздумай воровать гадюка!!! <i class="fa fa-heart-o" aria-hidden="true"></i>
-                by <a href="https://youtu.be/4rW7xvCpr1o" target="_blank">Спасибо =)</a>
+                by <a href="https://youtu.be/ox6ER0iUVBw" target="_blank"> Спасибо =)</a>
             </p>
         </div>
     );

@@ -1,0 +1,10 @@
+.community_articles_page {
+    display: flex;
+    background-image: url(../../../images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+
+}
+

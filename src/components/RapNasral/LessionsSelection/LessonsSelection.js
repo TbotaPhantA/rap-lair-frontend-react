@@ -9,7 +9,7 @@ function LessonsSelection() {
             <img className="dancing_niggers" src={DN} alt=""/>
             <h1 className="unselectable_text">Which Articles do you want to read?</h1>
             <div className="LS_buttons_wrapper">
-                <Link className="LS_button unselectable_text" to="/lessons_selection" >
+                <Link className="LS_button unselectable_text" to="/teachers_articles" >
                     <span></span>                
                     <span></span>                
                     <span></span>                
@@ -17,7 +17,7 @@ function LessonsSelection() {
                     Teachers Articles
                 </Link>
 
-                <Link className="LS_button unselectable_text" to="/lessons_selection" >
+                <Link className="LS_button unselectable_text" to="/community_articles" >
                     <span></span>                
                     <span></span>                
                     <span></span>                
