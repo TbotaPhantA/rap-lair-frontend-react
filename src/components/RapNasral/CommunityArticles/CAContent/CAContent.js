@@ -1,6 +1,7 @@
 import React from 'react';
 import './CAContent.css';
 import CAContentHeader from './CAContentHeader/CAContentHeader'; 
+import CAContentArticles from './CAContentArticles/CAContentArticles';
 
 function CAContent() {
     return (
@@ -9,7 +10,7 @@ function CAContent() {
                 <CAContentHeader />
             </div>
             <div className="CA_content">
-                I'm content
+                <CAContentArticles />
             </div>
         </div>
     );
