@@ -1,0 +1,15 @@
+.CA_content_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+
+.CA_content_search {
+    flex: 0.3;
+    display: flex;
+    color: gainsboro;
+    align-items: flex-end;
+}
