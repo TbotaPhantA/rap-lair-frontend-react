@@ -8,8 +8,21 @@
     color: #2471C3;
     overflow: hidden;
     transition: 0.2s;
+    background-color: rgba(37, 87, 132, 0.4);
+    align-items: center;
+    text-decoration: none;
 }
 
+.community_article_preview > img {
+    border-radius: 999px;
+    height: 100%;
+}
+
+.CA_article_title {
+    font-size: 40px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
 
 .community_article_preview:hover {
     color: #255784;
@@ -74,8 +87,4 @@
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
-}
-
-.community_article_preview > img {
-    border-radius: 999px;
 }

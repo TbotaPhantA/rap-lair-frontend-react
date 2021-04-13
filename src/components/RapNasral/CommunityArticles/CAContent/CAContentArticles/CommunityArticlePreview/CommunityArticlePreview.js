@@ -3,7 +3,7 @@ import './CommunityArticlePreview.css';
 import {Link} from 'react-router-dom';
 import author_avatar from '../../../../../../images/numbers/one.png';
 
-function CommunityArticlePreview() {
+function CommunityArticlePreview({userImage, title}) {
     return (
         <div className="community_article_preview_wrapper">
             <Link 
@@ -16,9 +16,8 @@ function CommunityArticlePreview() {
                     <span></span>
                     <span></span>
 
-                    <img src={author_avatar} alt=""/>
-                    <div className="CA_article_title">Some Title</div>
-                    <div className="CA_article_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis!</div>
+                    <img src={userImage ? userImage : author_avatar} alt=""/>
+                    <div className="CA_article_title">{title ? title: "some title"}</div>
                     
             </Link>
         </div>
