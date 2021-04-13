@@ -5,8 +5,8 @@ import CommunityArticlePreview from './CommunityArticlePreview/CommunityArticleP
 function CAContentArticles() {
     return (
         <div className="CA_content_articles">
-            <CommunityArticlePreview title="dibil" />
-            <CommunityArticlePreview />
+            <CommunityArticlePreview CA_id="1" title="dibil" />
+            <CommunityArticlePreview CA_id="2"/>
             <CommunityArticlePreview />
             <CommunityArticlePreview />
         </div>

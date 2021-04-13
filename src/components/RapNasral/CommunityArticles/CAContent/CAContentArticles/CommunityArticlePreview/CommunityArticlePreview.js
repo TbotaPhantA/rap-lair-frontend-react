@@ -3,11 +3,11 @@ import './CommunityArticlePreview.css';
 import {Link} from 'react-router-dom';
 import author_avatar from '../../../../../../images/numbers/one.png';
 
-function CommunityArticlePreview({userImage, title}) {
+function CommunityArticlePreview({userImage, title, CA_id}) {
     return (
         <div className="community_article_preview_wrapper">
             <Link 
-                to="/community_articles"
+                to={`/community_articles/${CA_id ? CA_id : '' }`}
                 className="community_article_preview"
                 >
                     {/* spans here for sparks effects */}
