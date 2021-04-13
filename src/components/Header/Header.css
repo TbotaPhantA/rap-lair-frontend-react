@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.header_left > img {
+.RapNasral_logo {
     margin-right: 20px;
     height: 5vh;
     width: auto;
@@ -38,7 +38,7 @@
     }
 }
 
-.header_left > img:hover {
+.RapNasral_logo:hover {
     transform: scale(1.1) rotate(3deg);
     cursor: pointer;
 }

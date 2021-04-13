@@ -1,13 +1,16 @@
 import React from 'react';
 import './Header.css';
 import RapLogo from '../../images/Raplogo.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className="main_header">
 
             <div className="header_left">
-                <img src={RapLogo} alt="RapNasral"/>
+                <Link to='/lessons_selection'>
+                    <img className="RapNasral_logo" src={RapLogo} alt="RapNasral"/>
+                </Link>
             </div>
 
             <div className="header_center">
