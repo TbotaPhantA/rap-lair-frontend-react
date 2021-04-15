@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import RapNasral from './components/RapNasral/RapNasral';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-const user = true;
+const user = false;
 
 function App() {
   return (
