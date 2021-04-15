@@ -17,13 +17,13 @@
 .CArticle_contianer > h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 4rem;
     margin: 30px;
 }
 
 .CArticle_contianer > p {
     margin-bottom: 100px;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 .CA_quiz {
@@ -37,7 +37,7 @@
 .CA_quiz_question {
     color: #06FF00;
     margin: 40px;
-    font-size: 52px;
+    font-size: 3rem;
 }
 
 .CA_quiz_answer {
