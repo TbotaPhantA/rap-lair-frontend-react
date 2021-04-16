@@ -28,20 +28,21 @@
 
 .rapper_card_qualities {
     margin: 15px;
+    font-size: 1vw;
     font-weight: 500;
 }
 
 .rapper_card_achievements {
     color: gray;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9vw;
     margin: 15px;
 }
 
 .rapper_card_one_phrase_description {
     color: #00EDAD;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9vw;
     margin: 15px;
 }
 
