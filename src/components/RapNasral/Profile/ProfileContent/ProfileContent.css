@@ -1,0 +1,25 @@
+.profile_content {
+    flex: 0.6;
+    height: 150vh;
+    margin: 10px;
+    border-radius: 10px;
+    margin: 10px 40px;
+}
+
+.profile_info_wrapper {
+    font-size: 2vw;
+    color: white;
+}
+
+.profile_status {
+    margin-left: 4px;
+    font-size: 18px;
+    color: #5F8CFF;
+}
+
+.profile_graph {
+    margin-top: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    height: 50vh;
+}
