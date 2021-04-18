@@ -1,0 +1,27 @@
+.post {
+    background-color: rgba(36, 36, 36, 1);
+    padding: 20px;
+    border-radius: 15px;
+    color: #E9E9E9;
+}
+
+.share_icon {
+    transform: scaleX(-1);
+}
+
+.comment_icon {
+    margin-right: 5px;
+}
+
+.like_icon {
+    margin-right: 5px;
+}
+
+.like_red {
+    color: red;
+}
+
+.post_text {
+    width: 80%;
+    margin: 10px 0;
+}

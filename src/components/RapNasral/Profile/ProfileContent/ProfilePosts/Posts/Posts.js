@@ -6,11 +6,6 @@ function Posts() {
     return (
         <div className="posts_wrapper">
             <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
         </div>
     );
 }
